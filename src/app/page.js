@@ -1,10 +1,7 @@
-import Header from "@/components/Header"
-
 export default function Home() {
   return (
     <main>
-      <Header />  
-      <section className="p-4 pt-32 max-w-4xl mx-auto">
+      <section className="p-6 pt-32 max-w-4xl mx-auto">
         <div className="max-w-md mb-6">
           <h1 className="text-6xl font-bold">
             Your one link<br /> for everything
