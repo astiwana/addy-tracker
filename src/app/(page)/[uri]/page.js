@@ -1,6 +1,6 @@
-import {Page} from "@/models/Page";
-import {User} from "@/models/User";
-import {Event} from "@/models/Event";
+import {Page} from "/src/models/Page";
+import {User} from "/src/models/User";
+import {Event} from "/src/models/Event";
 import {
   faDiscord,
   faFacebook,

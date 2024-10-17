@@ -1,4 +1,4 @@
-import Header from "@/components/Header";
+import Header from "/src/components/Header";
 import {Lato} from 'next/font/google'
 import '../globals.css'
 
