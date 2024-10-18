@@ -5,18 +5,9 @@ import Carousel from "@/components/Carousel";
 import GridContainer from "@/components/GridContainer";
 import Link from "next/link";
 import ImageGrid from "@/components/ImageGrid";
+import Image from "next/image";
 
-const imageUrls = [
-  "/assets/polly.png",
-  "/assets/preview.png",
-  "/assets/doggie.png",
-  "/assets/manfred.png",
-  "/assets/walter.png",
-  "/assets/model.png",
-  "/assets/cat.png",
-  "/assets/model1.png",
-
-];
+const imageUrl = "/assets/preview.png";
 export default async function Home() {
   const session = await getServerSession(authOptions);
   return (
@@ -30,18 +21,16 @@ export default async function Home() {
           </h2>
           <HeroForm user={session?.user} />
         </div>
-        <Carousel images={imageUrls} />
 
-        {/* <Image
-          src={'/assets/preview.png'}
+        {/* Display one image */}
+        <Image
+          src={imageUrl} // Use the selected image URL
           alt="banner image"
           width={290} // Adjust the width as needed
           height={290} // Adjust the height to maintain the aspect ratio
           className="rounded-2xl border-2 shadow-gray-500/20 shadow-lg hover:shadow-2xl transition-shadow"
-        /> */}
+        />
       </section>
-
-
     </main>
   );
 }
