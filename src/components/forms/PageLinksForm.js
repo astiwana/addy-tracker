@@ -84,7 +84,7 @@ export default function PageLinksForm({ page, user }) {
   return (
     <SectionBox>
       <form action={save}>
-        <h2 className="text-2xl font-bold mb-4">Links</h2>
+        <h2 className="text-2xl font-bold mb-4">Cryptocurrency addresses</h2>
         <button
           onClick={addNewLink}
           type="button"
@@ -159,7 +159,7 @@ export default function PageLinksForm({ page, user }) {
                       ) : (
                         <FontAwesomeIcon icon={faTrash} />
                       )}
-                      <span>Remove this link</span>
+                      <span>Remove this address</span>
                     </button>
                   </div>
                 </div>
@@ -172,21 +172,13 @@ export default function PageLinksForm({ page, user }) {
                     type="text"
                     placeholder="title"
                   />
-                  <label className="input-label">Subtitle:</label>
+                  <label className="input-label">ADDRESS:</label>
                   <input
                     className="rounded-md"
                     value={l.subtitle}
                     onChange={(ev) => handleLinkChange(l.key, "subtitle", ev)}
                     type="text"
                     placeholder="subtitle (optional)"
-                  />
-                  <label className="input-label">URL:</label>
-                  <input
-                    className="rounded-md"
-                    value={l.url}
-                    onChange={(ev) => handleLinkChange(l.key, "url", ev)}
-                    type="text"
-                    placeholder="url"
                   />
                 </div>
               </div>

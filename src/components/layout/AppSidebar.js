@@ -23,19 +23,6 @@ export default function AppSidebar() {
         />
         <span className="">My Page</span>
       </Link>
-      <Link
-        href={'/analytics'}
-        className={
-          "flex gap-4 p-2 "
-          + (path === '/analytics' ? 'text-blue-500 hover:underline' : 'hover:underline')
-        }>
-        <FontAwesomeIcon
-          fixedWidth={true}
-          icon={faChartLine}
-          className={'w-6 h-6'}
-        />
-        <span className="">Analytics</span>
-      </Link>
       <LogoutButton
         iconLeft={true}
         className={'flex gap-4 items-center text-gray-500 p-2 hover:underline'}
