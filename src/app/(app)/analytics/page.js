@@ -20,9 +20,9 @@ import {
 } from "recharts";
 
 export const metadata = {
-  title: "LinkTri Clone | Analytics",
+  title: "Crypto AddyTracker | Analytics",
   description:
-    "Share your links, social profiles, contact info and more on one page",
+    "Share all your cryptocurrency addresses, contact info and more on one page",
 };
 export default async function AnalyticsPage() {
   mongoose.connect(process.env.MONGO_URI);
