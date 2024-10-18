@@ -24,9 +24,6 @@ export default async function Header() {
 
         {/* Desktop Navigation Links - Centered */}
         <nav className="hidden sm:flex justify-center gap-10 text-slate-500 text-sm flex-grow font-bold">
-          <Link href="/about" className="hover:underline">About</Link>
-          <Link href="/pricing" className="hover:underline">Pricing</Link>
-          <Link href="/contact" className="hover:underline">Contact</Link>
         </nav>
 
         {/* Session/Login Buttons for Desktop */}
@@ -56,9 +53,6 @@ export default async function Header() {
 
         {/* Mobile Navigation Links (Hidden when Hamburger Menu is used) */}
         {/* <nav className="w-full sm:hidden flex justify-center gap-10 font-bold text-slate-500 text-sm mt-4">
-          <Link href="/about" className="hover:underline">About</Link>
-          <Link href="/pricing" className="hover:underline">Pricing</Link>
-          <Link href="/contact" className="hover:underline">Contact</Link>
         </nav> */}
       </div>
     </header>

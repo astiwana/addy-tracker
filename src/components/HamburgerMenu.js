@@ -20,9 +20,6 @@ const HamburgerMenu = ({ session }) => {
       {isOpen && (
         <div className="absolute top-14 left-0 w-full bg-white shadow-md z-50">
           <nav className="flex flex-col items-center gap-4 py-4">
-            <Link href="/about" className="hover:underline" onClick={toggleMenu}>About</Link>
-            <Link href="/pricing" className="hover:underline" onClick={toggleMenu}>Pricing</Link>
-            <Link href="/contact" className="hover:underline" onClick={toggleMenu}>Contact</Link>
             {!!session ? (
               <>
                 <Link
