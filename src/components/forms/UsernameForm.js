@@ -17,7 +17,7 @@ export default function UsernameForm({desiredUsername}) {
   }
   return (
     <form action={handleSubmit}>
-      <h1 className="text-4xl font-bold text-center mb-2">
+      <h1 className="text-4xl font-bold text-center mb-2 mt-20">
         Grab your username
       </h1>
       <p className="text-center mb-6 text-gray-500">
@@ -26,12 +26,12 @@ export default function UsernameForm({desiredUsername}) {
       <div className="max-w-xs mx-auto">
         <input
           name="username"
-          className="block p-2 mx-auto border w-full mb-2 text-center"
+          className="block p-2 mx-auto border w-full mb-2 text-center rounded-md"
           defaultValue={desiredUsername}
           type="text"
           placeholder="username" />
         {taken && (
-          <div className="bg-red-200 border border-red-500 p-2 mb-2 text-center">
+          <div className="bg-red-200 border border-red-500 p-2 mb-2 text-center rounded-md">
             This username is taken
           </div>
         )}

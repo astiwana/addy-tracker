@@ -3,7 +3,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 export default function RadioTogglers({options,defaultValue,onChange}) {
   return (
-    <div className="radio-togglers shadow">
+    <div className="radio-togglers shadow rounded-md">
       {options.map(option => (
         <label key={option.value}>
           <input
